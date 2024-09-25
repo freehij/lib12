@@ -1,0 +1,1 @@
+def a():r=__import__("random").randint;return __import__("datetime").datetime.utcfromtimestamp(__import__("time").time()+(r(9999999, 999999999)if r(1,5)!=1else r(99999, 9999999))).strftime("%Y-%m-%d %H:%M:%S")
