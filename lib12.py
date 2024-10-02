@@ -7,4 +7,4 @@ class CustomDict:
     def get_by_pos(self, key: int):return self.__j[key]if key in self.__i else None
     def keys(self)->list:return self.__i
     def values(self)->list:return self.__j
-    def items(self)->__import__("typing").Generator:yield from((i,self.__j[self.__i.index(i)])for i in self.keys())
+    def items(self)->__import__("typing").Generator:yield from((i,self.__j[self.__i.index(i)])for i in self.__i)
