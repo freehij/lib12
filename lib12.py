@@ -1,4 +1,4 @@
-def a()->str:r=__import__("random").randint;return __import__("datetime").datetime.utcfromtimestamp(__import__("time").time()+(r(9999999,999999999)if r(1,5)!=1else r(99999,9999999))).strftime("%Y-%m-%d %H:%M:%S")
+def a()->str:r=__import__("random").randint;return __import__("datetime").datetime.utcfromtimestamp(__import__("time").time()+(r(9999999,999999999)if r(1,5)!=1 else r(99999,9999999))).strftime("%Y-%m-%d %H:%M:%S")
 def b()->str:a=__import__("random");r=a.randint;return __import__("datetime").datetime.utcfromtimestamp(__import__("time").time()+a.choice([r(99999,9999999),r(9999999,999999999),r(999999999,5999999999)])).strftime("%Y-%m-%d %H:%M:%S")
 class CustomDict:
     def __init__(self)->None:self.__i=[];self.__j=[]
