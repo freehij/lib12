@@ -4,6 +4,7 @@ from typing import Generator, Any
 class CustomDict:
     def __init__(self)->None:self.__i=[];self.__j=[]
     def set(self,key:Any,value:Any)->None:self.__i.append(key)if key not in self.__i else None;self.__j.insert(self.__i.index(key),value)
+    def remove(self,key:Any)->None:self.__j.remove(self.__i.index(key));self.__i.remove(key)
     def get(self,key:Any)->Any:return self.__j[self.__i.index(key)]if key in self.__i else None
     def get_by_pos(self, key: int)->Any:return self.__j[key]if key in self.__i else None
     def keys(self)->list:return self.__i
